@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllTests-vbet.de" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="BannerNetTest.xml"></suite-file>
+        <suite-file path="SignUpNetTest.xml"></suite-file>
+        <suite-file path="LogInNetTest.xml"></suite-file>
+        <suite-file path="MultiBettingNetTest.xml"></suite-file>
+        <suite-file path="SingleBettingNetTest.xml"></suite-file>
+
+    </suite-files>
+</suite>

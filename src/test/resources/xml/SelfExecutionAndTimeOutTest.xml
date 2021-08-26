@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vbet.com SelfExecutionAndTimeOutTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="SelfExecutionAndTimeOut Test EN">
+        <parameter name="signInUrl" value="https://www.vbet.com/#?sign-in" />
+        <parameter name="selfExecution" value="https://www.vbet.com/#/account/my-profile/self-exclusion" />
+        <parameter name="sportsUrl" value="https://www.vbet.com" />
+        <parameter name="selfExecution" value="https://www.vbet.com/#/account/my-profile/time-out" />
+        <classes>
+            <class name="vbetcom.myProfile.SelfExecutionAndTimeOutTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="SelfExecutionAndTimeOut Test KA">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#?sign-in" />-->
+<!--        <parameter name="selfExecution" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#/account/my-profile/self-exclusion" />-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1" />-->
+<!--        <parameter name="selfExecution" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#/account/my-profile/time-out" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.SelfExecutionAndTimeOutTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="SelfExecutionAndTimeOut Test TR">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/tr/sporlar#?sign-in" />-->
+<!--        <parameter name="selfExecution" value="https://www.vbet.com/tr/sporlar#/account/my-profile/self-exclusion" />-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/tr/sporlar" />-->
+<!--        <parameter name="selfExecution" value="https://www.vbet.com/tr/sporlar#/account/my-profile/time-out" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.SelfExecutionAndTimeOutTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="SelfExecutionAndTimeOut Test RU">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ru/sports#?sign-in" />-->
+<!--        <parameter name="selfExecution" value="https://www.vbet.com/ru/sports#/account/my-profile/self-exclusion" />-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/ru/sports" />-->
+<!--        <parameter name="selfExecution" value="https://www.vbet.com/ru/sports#/account/my-profile/time-out" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.SelfExecutionAndTimeOutTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="SelfExecutionAndTimeOut Test UK">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?sign-in" />-->
+<!--        <parameter name="selfExecution" value="https://www.vbet.com/uk/%D1%82%D1%83%D1%80%D0%BD%D1%96%D1%80-1#/account/my-profile/self-exclusion" />-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82" />-->
+<!--        <parameter name="selfExecution" value="https://www.vbet.com/uk/%D1%82%D1%83%D1%80%D0%BD%D1%96%D1%80-1#/account/my-profile/time-out" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.SelfExecutionAndTimeOutTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GamesTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+
+    </listeners>
+    <test name="Games Test EN">
+        <parameter name="signInUrl" value="https://www.vbet.com/live-casino#?sign-in" />
+        <parameter name="gamesUrl" value="https://www.vbet.com/games" />
+        <classes>
+            <class name="vbetcom.GamesTest">
+                    <methods >
+                        <include name="validationForRedirectionOfPlayNowButton"/>
+                    </methods>
+            </class>
+
+        </classes>
+    </test>
+
+<!--    <test name="Games Test KA">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ka/%E1%83%9A%E1%83%90%E1%83%98%E1%83%95-%E1%83%99%E1%83%90%E1%83%96%E1%83%98%E1%83%9C%E1%83%9D#?sign-in" />-->
+<!--        <parameter name="gamesUrl" value="https://www.vbet.com/ka/%E1%83%97%E1%83%90%E1%83%9B%E1%83%90%E1%83%A8%E1%83%94%E1%83%91%E1%83%98" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.GamesTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Games Test RU">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ru/live-casino#?sign-in" />-->
+<!--        <parameter name="gamesUrl" value="https://www.vbet.com/tr/oyunlar" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.GamesTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Games Test TR">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/tr/canl-casino#?sign-in" />-->
+<!--        <parameter name="gamesUrl" value="https://www.vbet.com/ru/%D0%B8%D0%B3%D1%80%D1%8B" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.GamesTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

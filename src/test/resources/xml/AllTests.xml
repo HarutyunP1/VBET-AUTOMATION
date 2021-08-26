@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllTests - vbet.com" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="LogInTest.xml"></suite-file>
+        <suite-file path="SignUpTest.xml"></suite-file>
+        <suite-file path="BannerTest.xml"></suite-file>
+        <suite-file path="MultiBettingVbetCom.xml"></suite-file>
+        <suite-file path="SingleBettingTest.xml"></suite-file>
+        <suite-file path="BonusesTest.xml"></suite-file>
+        <suite-file path="ChangePasswordTest.xml"></suite-file>
+        <suite-file path="DocumentsTest.xml"></suite-file>
+        <suite-file path="EditProfileTest.xml"></suite-file>
+        <suite-file path="GamesTest.xml"></suite-file>
+        <suite-file path="LimitsTest.xml"></suite-file>
+        <suite-file path="MessagesTest.xml"></suite-file>
+        <suite-file path="MyBetsTest.xml"></suite-file>
+        <suite-file path="MyWalletTest.xml"></suite-file>
+        <suite-file path="Promotions.xml"></suite-file>
+        <suite-file path="RealityCheckedAndNotificationTest.xml"></suite-file>
+        <suite-file path="SelfExecutionAndTimeOutTest.xml"></suite-file>
+        <suite-file path="PokerTest.xml"></suite-file>
+
+    </suite-files>
+</suite>

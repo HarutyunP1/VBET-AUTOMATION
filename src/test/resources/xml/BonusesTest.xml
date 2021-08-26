@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vbet.com BonusesTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Bonuses Test EN">
+        <parameter name="signInUrl" value="https://www.vbet.com/#?sign-in" />
+        <parameter name="sportsBookUrl" value="https://www.vbet.com/#/account/bonuses/sportsbook" />
+        <parameter name="casinoUrl" value="https://www.vbet.com/#/account/bonuses/casino" />
+        <classes>
+            <class name="vbetcom.myProfile.BonusesTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Bonuses Test KA">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#?sign-in" />-->
+<!--        <parameter name="sportsBookUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#/account/bonuses/sportsbook" />-->
+<!--        <parameter name="casinoUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#/account/bonuses/casino" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.BonusesTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Bonuses Test TR">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/tr/sporlar#?sign-in" />-->
+<!--        <parameter name="sportsBookUrl" value="https://www.vbet.com/tr/sporlar#/account/bonuses/sportsbook" />-->
+<!--        <parameter name="casinoUrl" value="https://www.vbet.com/tr/sporlar#/account/bonuses/casino" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.BonusesTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Bonuses Test RU">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ru/sports#?sign-in" />-->
+<!--        <parameter name="sportsBookUrl" value="https://www.vbet.com/ru/sports#/account/bonuses/sportsbook" />-->
+<!--        <parameter name="casinoUrl" value="https://www.vbet.com/ru/sports#/account/bonuses/casino" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.BonusesTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Bonuses Test UK">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?sign-in" />-->
+<!--        <parameter name="sportsBookUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#/account/bonuses/sportsbook" />-->
+<!--        <parameter name="casinoUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#/account/bonuses/casino" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.BonusesTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

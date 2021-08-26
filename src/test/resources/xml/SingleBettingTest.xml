@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="vbetcom.SingleBettingTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Single betting Test - EN">
+        <parameter name="sportsUrl" value="https://www.vbet.com/live#/eventview/Soccer/World/3119/15848329" />
+        <parameter name="signInUrl" value="https://www.vbet.com/#?sign-in" />
+        <classes>
+            <class name="vbetcom.SingleBettingTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Single betting Test - KA">-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#?sign-in" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.SingleBettingTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Single betting Test - RU">-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/ru/sports" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ru/sports#?sign-in" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.SingleBettingTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Single betting Test - TR">-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/tr/sporlar" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/tr/sporlar#?sign-in" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.SingleBettingTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Single betting Test - Uk">-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?sign-in" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.SingleBettingTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

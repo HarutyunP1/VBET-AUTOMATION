@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SignUpNetTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Sign Up Net Test EN">
+        <parameter name="welcomeOfferUrl" value="https://www.vbet.de/en/promo/sport-1/first-deposit-sport-bonus" />
+        <parameter name="signUpUrl" value="https://www.vbet.de/en/sport#?sign-up" />
+        <classes>
+            <class name="vbetnet.SignUpNetTest"/>
+        </classes>
+    </test>
+
+    <test name="Sign Up Net Test DE">
+        <parameter name="welcomeOfferUrl" value="https://www.vbet.de/sport-1/sportbonus-fr-die-erste-einzahlung-1" />
+        <parameter name="signUpUrl" value="https://www.vbet.de/sport#?sign-up" />
+        <classes>
+            <class name="vbetnet.SignUpNetTest"/>
+        </classes>
+    </test>
+
+</suite>

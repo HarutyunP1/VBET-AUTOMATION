@@ -1,0 +1,71 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LogInTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Sign In Test EN">
+        <parameter name="signInUrl" value="https://www.vbet.com/#?sign-in" />
+        <parameter name="forgotPassUrl" value="https://www.vbet.com/#?forgot-password" />
+        <parameter name="signUpUrl" value="https://www.vbet.com/#?sign-up" />
+        <parameter name="sportsUrl" value="https://www.vbet.com/live#/eventview/Soccer/England/4676/15849854" />
+        <parameter name="tournamentsUrl" value="https://www.vbet.com/tournaments" />
+        <parameter name="liveCasinoUrl" value="https://www.vbet.com/live-casino" />
+        <parameter name="homePageUrl" value="https://www.vbet.com" />
+        <classes>
+            <class name="vbetcom.LogInTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Sign In Test KA">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ka/%E1%83%9B%E1%83%94%E1%83%A2%E1%83%98/%E1%83%A2%E1%83%A3%E1%83%A0%E1%83%9C%E1%83%98%E1%83%A0%E1%83%94%E1%83%91%E1%83%98#?sign-in" />-->
+<!--        <parameter name="forgotPassUrl" value="https://www.vbet.com/ka/%E1%83%9B%E1%83%94%E1%83%A2%E1%83%98/%E1%83%A2%E1%83%A3%E1%83%A0%E1%83%9C%E1%83%98%E1%83%A0%E1%83%94%E1%83%91%E1%83%98#?forgot-password" />-->
+<!--        <parameter name="signUpUrl" value="https://www.vbet.com/ka/%E1%83%9B%E1%83%94%E1%83%A2%E1%83%98/%E1%83%A2%E1%83%A3%E1%83%A0%E1%83%9C%E1%83%98%E1%83%A0%E1%83%94%E1%83%91%E1%83%98#?sign-up" />-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1" />-->
+<!--        <parameter name="tournamentsUrl" value="https://www.vbet.com/ka/%E1%83%9B%E1%83%94%E1%83%A2%E1%83%98/%E1%83%A2%E1%83%A3%E1%83%A0%E1%83%9C%E1%83%98%E1%83%A0%E1%83%94%E1%83%91%E1%83%98" />-->
+<!--        <parameter name="liveCasinoUrl" value="https://www.vbet.com/ka/%E1%83%9A%E1%83%90%E1%83%98%E1%83%95-%E1%83%99%E1%83%90%E1%83%96%E1%83%98%E1%83%9C%E1%83%9D" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/ka" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.LogInTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Sign In Test TR">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/tr/sporlar#?sign-in" />-->
+<!--        <parameter name="forgotPassUrl" value="https://www.vbet.com/tr/sporlar#?forgot-password" />-->
+<!--        <parameter name="signUpUrl" value="https://www.vbet.com/tr/sporlar#?sign-up" />-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/tr/sporlar" />-->
+<!--        <parameter name="tournamentsUrl" value="https://www.vbet.com/tr/daha-fazlas/turnuvalar" />-->
+<!--        <parameter name="liveCasinoUrl" value="https://www.vbet.com/tr/canl-casino" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/tr" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.LogInTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Sign In Test RU">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ru/sports#?sign-in" />-->
+<!--        <parameter name="forgotPassUrl" value="https://www.vbet.com/ru/sports#?forgot-password" />-->
+<!--        <parameter name="signUpUrl" value="https://www.vbet.com/ru/sports#?sign-up" />-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/ru/sports" />-->
+<!--        <parameter name="tournamentsUrl" value=" https://www.vbet.com/ru/%D1%82%D1%83%D1%80%D0%BD%D0%B8%D1%80%D1%8B" />-->
+<!--        <parameter name="liveCasinoUrl" value="https://www.vbet.com/ru/live-casino" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/ru" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.LogInTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Sign In Test UK">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?sign-in" />-->
+<!--        <parameter name="forgotPassUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?forgot-password" />-->
+<!--        <parameter name="signUpUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?sign-up" />-->
+<!--        <parameter name="sportsUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82" />-->
+<!--        <parameter name="tournamentsUrl" value="https://www.vbet.com/uk/%D1%82%D1%83%D1%80%D0%BD%D1%96%D1%80-1" />-->
+<!--        <parameter name="liveCasinoUrl" value="https://www.vbet.com/uk/%D0%BB%D0%B0%D0%B9%D0%B2-%D0%BA%D0%B0%D0%B7%D0%B8%D0%BD%D0%BE" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/uk" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.LogInTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

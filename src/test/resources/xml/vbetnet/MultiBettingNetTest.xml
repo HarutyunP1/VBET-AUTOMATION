@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MultiBettingNetTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Multi betting Net Test - DE">
+        <parameter name="sportsUrl" value="https://www.vbet.de/sport" />
+        <parameter name="signInUrl" value="https://www.vbet.de/sport#?sign-in" />
+        <classes>
+            <class name="vbetcom.MultipleBettingTest"/>
+        </classes>
+    </test>
+
+    <test name="Multi betting Net Test - EN">
+        <parameter name="sportsUrl" value="https://www.vbet.de/en/sport" />
+        <parameter name="signInUrl" value="https://www.vbet.de/en/sport#?sign-in" />
+        <classes>
+            <class name="vbetcom.MultipleBettingTest"/>
+        </classes>
+    </test>
+
+</suite>

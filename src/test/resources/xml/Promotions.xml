@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PromotionTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Promotion EN Test">
+        <parameter name="promoUrl" value="https://www.vbet.com/promo-2" />
+        <classes>
+            <class name="vbetcom.PromotionsTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Promotion TR Test">-->
+<!--        <parameter name="promoUrl" value="https://www.vbet.com/tr/promosyon-1" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.PromotionsTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Promotion KA Test">-->
+<!--        <parameter name="promoUrl" value="https://www.vbet.com/ka/%E1%83%90%E1%83%A5%E1%83%AA%E1%83%98%E1%83%90-1" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.PromotionsTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Promotion RU Test">-->
+<!--        <parameter name="promoUrl" value="https://www.vbet.com/ru/promo" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.PromotionsTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Promotion UK Test">-->
+<!--        <parameter name="promoUrl" value="https://www.vbet.com/uk/%D0%B0%D0%BA%D1%86%D1%96%D1%97-1" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.PromotionsTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

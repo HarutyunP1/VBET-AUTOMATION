@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SingleBettingNetTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="Single Betting Net Test DE">
+        <parameter name="sportsUrl" value="https://www.vbet.de/sport" />
+        <parameter name="signInUrl" value="https://www.vbet.de/sport#?sign-in" />
+        <classes>
+            <class name="vbetnet.SingleBettingNetTest"/>
+        </classes>
+    </test>
+
+    <test name="Single Betting Test EN">
+        <parameter name="sportsUrl" value="https://www.vbet.de/en/sport" />
+        <parameter name="signInUrl" value="https://www.vbet.de/en/sport#?sign-in" />
+        <classes>
+            <class name="vbetnet.SingleBettingNetTest"/>
+        </classes>
+    </test>
+
+</suite>

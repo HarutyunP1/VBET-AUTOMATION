@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BannerTestNetTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="Banner Net Test DE">
+        <parameter name="signInUrl" value="https://www.vbet.de/sport#?sign-in" />
+        <parameter name="casinoUrl" value="https://www.vbet.de/casino" />
+        <parameter name="liveCasinoUrl" value="https://www.vbet.de/live-casino" />
+        <classes>
+            <class name="vbetnet.BannerNetTest"/>
+        </classes>
+    </test>
+
+    <test name="Banner Net Test EN">
+        <parameter name="signInUrl" value="https://www.vbet.de/en/sport#?sign-in" />
+        <parameter name="casinoUrl" value="https://www.vbet.de/en/casino" />
+        <parameter name="liveCasinoUrl" value="https://www.vbet.de/en/live-casino" />
+        <classes>
+            <class name="vbetnet.BannerNetTest"/>
+        </classes>
+    </test>
+
+</suite>

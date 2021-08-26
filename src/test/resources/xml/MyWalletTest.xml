@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vbet.com MyWalletTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="MyWallet Test EN">
+        <parameter name="signInUrl" value="https://www.vbet.com/#?sign-in" />
+        <parameter name="depositUrl" value="https://www.vbet.com/#/account/my-wallet/deposit" />
+        <parameter name="withDrawUrl" value="https://www.vbet.com/#/account/my-wallet/withdraw" />
+        <parameter name="balanceHistoryUrl" value="https://www.vbet.com/#/account/my-wallet/balance-history" />
+        <classes>
+            <class name="vbetcom.myProfile.MyWalletTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="MyWallet Test KA">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#?sign-in" />-->
+<!--        <parameter name="depositUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#/account/my-wallet/deposit" />-->
+<!--        <parameter name="withDrawUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#/account/my-wallet/withdraw" />-->
+<!--        <parameter name="balanceHistoryUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#/account/my-wallet/balance-history" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.MyWalletTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="MyWallet Test TR">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/tr/sporlar#?sign-in" />-->
+<!--        <parameter name="depositUrl" value="https://www.vbet.com/tr/sporlar#/account/my-wallet/deposit" />-->
+<!--        <parameter name="withDrawUrl" value="https://www.vbet.com/tr/sporlar#/account/my-wallet/withdraw" />-->
+<!--        <parameter name="balanceHistoryUrl" value="https://www.vbet.com/tr/sporlar#/account/my-wallet/balance-history" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.MyWalletTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="MyWallet Test RU">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ru/sports#?sign-in" />-->
+<!--        <parameter name="depositUrl" value="https://www.vbet.com/ru/sports#/account/my-wallet/deposit" />-->
+<!--        <parameter name="withDrawUrl" value="https://www.vbet.com/ru/sports#/account/my-wallet/withdraw" />-->
+<!--        <parameter name="balanceHistoryUrl" value="https://www.vbet.com/ru/sports#/account/my-wallet/balance-history" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.MyWalletTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="MyWallet Test UK">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?sign-in" />-->
+<!--        <parameter name="depositUrl" value="https://www.vbet.com/uk/%D1%82%D1%83%D1%80%D0%BD%D1%96%D1%80-1#/account/my-wallet/deposit" />-->
+<!--        <parameter name="withDrawUrl" value="https://www.vbet.com/uk/%D1%82%D1%83%D1%80%D0%BD%D1%96%D1%80-1#/account/my-wallet/withdraw" />-->
+<!--        <parameter name="balanceHistoryUrl" value="https://www.vbet.com/uk/%D1%82%D1%83%D1%80%D0%BD%D1%96%D1%80-1#/account/my-wallet/balance-history" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.myProfile.MyWalletTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

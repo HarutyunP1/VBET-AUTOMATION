@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LogInNetTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Log In Net Test EN">
+        <parameter name="signInUrl" value="https://www.vbet.de/en/sport#?sign-in" />
+        <parameter name="forgotPasswordUrl" value="https://www.vbet.de/en/sport#?forgot-password" />
+        <parameter name="signUpUrl" value="https://www.vbet.de/en/sport#?sign-up" />
+        <parameter name="sportsUrl" value="https://www.vbet.de/en/sport" />
+        <parameter name="tournamentsUrl" value="https://www.vbet.com/tournaments" />
+        <parameter name="liveCasinoUrl" value="https://www.vbet.de/en/live-casino" />
+        <classes>
+            <class name="vbetnet.LogInNetTest"/>
+        </classes>
+    </test>
+
+    <test name="Log In Net Test DE">
+        <parameter name="signInUrl" value="https://www.vbet.de/sport#?sign-in" />
+        <parameter name="forgotPasswordUrl" value="https://www.vbet.de/sport#?forgot-password" />
+        <parameter name="signUpUrl" value="https://www.vbet.de/sport#?sign-up" />
+        <parameter name="sportsUrl" value="https://www.vbet.de/sport" />
+        <parameter name="tournamentsUrl" value="https://www.vbet.com/tournaments" />
+        <parameter name="liveCasinoUrl" value="https://www.vbet.de/live-casino" />
+        <classes>
+            <class name="vbetnet.LogInNetTest"/>
+        </classes>
+    </test>
+</suite>

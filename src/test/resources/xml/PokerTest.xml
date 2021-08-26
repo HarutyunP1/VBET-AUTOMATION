@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PokerTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Poker Test EN">
+        <parameter name="pokerUrl" value="https://www.vbet.com/poker" />
+        <classes>
+            <class name="vbetcom.PokerTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Poker Test KA">-->
+<!--          <parameter name="pokerUrl" value="https://www.vbet.com/ka/%E1%83%9E%E1%83%9D%E1%83%99%E1%83%94%E1%83%A0%E1%83%98" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.PokerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Poker Test RU">-->
+<!--        <parameter name="pokerUrl" value="https://www.vbet.com/ru/%D0%BF%D0%BE%D0%BA%D0%B5%D1%80" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.PokerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Poker Test TR">-->
+<!--        <parameter name="pokerUrl" value="https://www.vbet.com/ka/%E1%83%9E%E1%83%9D%E1%83%99%E1%83%94%E1%83%A0%E1%83%98" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.PokerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Poker Test UK">-->
+<!--        <parameter name="pokerUrl" value="https://www.vbet.com/uk/%D0%BF%D0%BE%D0%BA%D0%B5%D1%80" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.PokerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>

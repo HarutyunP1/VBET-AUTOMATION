@@ -1,0 +1,65 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BannerTest" group-by-instances="true" configfailurepolicy="continue">
+
+
+
+    <listeners>
+
+    <listener class-name="listeners.AnnotationTransformer"/>
+
+</listeners>
+
+    <test name="Banner Test EN">
+
+        <parameter name="casinoUrl" value="https://www.vbet.com/casino" />
+        <parameter name="liveCasinoUrl" value="https://www.vbet.com/live-casino" />
+        <parameter name="signInUrl" value="https://www.vbet.com/live-casino#?sign-in" />
+        <parameter name="pokerUrl" value="https://www.vbet.com/poker" />
+        <classes>
+            <class name="vbetcom.BannerTest"/>
+        </classes>
+
+
+
+    </test>
+
+
+<!--    <test name="Banner Test KA">-->
+<!--        <parameter name="casinoUrl" value="https://www.vbet.com/ka/%E1%83%99%E1%83%90%E1%83%96%E1%83%98%E1%83%9C%E1%83%9D" />-->
+<!--        <parameter name="liveCasinoUrl" value="https://www.vbet.com/ka/%E1%83%9A%E1%83%90%E1%83%98%E1%83%95-%E1%83%99%E1%83%90%E1%83%96%E1%83%98%E1%83%9C%E1%83%9D" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ka/%E1%83%9A%E1%83%90%E1%83%98%E1%83%95-%E1%83%99%E1%83%90%E1%83%96%E1%83%98%E1%83%9C%E1%83%9D#?sign-in" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.BannerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Banner Test RU">-->
+<!--        <parameter name="casinoUrl" value="https://www.vbet.com/ru/casino" />-->
+<!--        <parameter name="liveCasinoUrl" value="https://www.vbet.com/ru/live-casino" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ru/live-casino#?sign-in" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.BannerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Banner Test TR">-->
+<!--        <parameter name="casinoUrl" value="https://www.vbet.com/tr/casino" />-->
+<!--        <parameter name="liveCasinoUrl" value="https://www.vbet.com/tr/canl-casino"/>-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/tr/canl-casino#?sign-in" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.BannerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Banner Test UK">-->
+<!--        <parameter name="casinoUrl" value="https://www.vbet.com/uk/%D0%BA%D0%B0%D0%B7%D0%B8%D0%BD%D0%BE" />-->
+<!--        <parameter name="liveCasinoUrl" value="https://www.vbet.com/uk/%D0%BB%D0%B0%D0%B9%D0%B2-%D0%BA%D0%B0%D0%B7%D0%B8%D0%BD%D0%BE"/>-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/uk/%D0%BB%D0%B0%D0%B9%D0%B2-%D0%BA%D0%B0%D0%B7%D0%B8%D0%BD%D0%BE#?sign-in" />-->
+<!--        <parameter name="pokerUrl" value="https://www.vbet.com/uk/%D0%BF%D0%BE%D0%BA%D0%B5%D1%80" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.BannerTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>

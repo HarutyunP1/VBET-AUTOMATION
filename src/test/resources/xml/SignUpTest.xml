@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vbet.com SignUpTest" group-by-instances="true" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Sign Up Test EN">
+        <parameter name="signUpUrl" value="https://www.vbet.com/#?sign-up" />
+        <parameter name="welComeOfferUrl" value="https://www.vbet.com/sport/sport-welcome-bonus-100-free-bet-up-to-20" />
+        <parameter name="signInUrl" value="https://www.vbet.com/#?sign-in" />
+        <parameter name="homePageUrl" value="https://www.vbet.com" />
+        <classes>
+            <class name="vbetcom.SignUpTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="Sign Up Test KA">-->
+<!--        <parameter name="signUpUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#?sign-up" />-->
+<!--        <parameter name="welComeOfferUrl" value="https://www.vbet.com/ka/sport-alias/sport-welcome-bonus-100-free-bet-up-to-20" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ka/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98-1#?sign-in" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/ka" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.SignUpTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Sign Up Test TR">-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/tr/sporlar#?sign-in" />-->
+<!--        <parameter name="signUpUrl" value="https://www.vbet.com/tr/sporlar#?sign-up" />-->
+<!--        <parameter name="welComeOfferUrl" value="https://www.vbet.com/tr/sport-alias/sport-welcome-bonus-100-free-bet-up-to-20" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/tr" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.SignUpTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Sign Up Test RU">-->
+<!--        <parameter name="signUpUrl" value="https://www.vbet.com/ru/sports#?sign-up" />-->
+<!--        <parameter name="welComeOfferUrl" value="https://www.vbet.com/ru/sport/sport-welcome-bonus-100-free-bet-up-to-20" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/ru/homepage" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/ru/sports#?sign-in" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/ru" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.SignUpTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Sign Up Test UK">-->
+<!--        <parameter name="signUpUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?sign-up" />-->
+<!--        <parameter name="welComeOfferUrl" value="https://www.vbet.com/uk/sport/sport-welcome-bonus-100-free-bet-up-to-20" />-->
+<!--        <parameter name="signInUrl" value="https://www.vbet.com/uk/%D1%81%D0%BF%D0%BE%D1%80%D1%82#?sign-in" />-->
+<!--        <parameter name="homePageUrl" value="https://www.vbet.com/uk" />-->
+<!--        <classes>-->
+<!--            <class name="vbetcom.SignUpTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
